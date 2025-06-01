@@ -10,7 +10,7 @@ programming_languages:
     icon: "fas fa-r"
   - name: "YAML"
     level: 65
-    icon: "fab fa-gear"
+    icon: "fas fa-gear"
   - name: "Java"
     level: 50
     icon: "fab fa-java"
@@ -40,7 +40,7 @@ cloud_devops:
     icon: "fab fa-linux"
   - name: "Helm"
     level: 60
-    icon: "fas-fa-helmet-safety"
+    icon: "fas fa-helmet-safety"
   - name: "OpenShift"
     level: 55
     icon: "fab fa-redhat"
