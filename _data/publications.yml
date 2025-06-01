@@ -1,12 +1,4 @@
 publications:
-  - title: "A scalable approach towards real-time cable ratings for underground medium voltage cables"
-    authors: "Sander Rieken, Tim Weelinck, Joan Ressing"
-    journal: "CIRED"
-    year: 2021
-    type: "journal"
-    link: "https://ieeexplore.ieee.org/abstract/document/9692846"
-    abstract: "This paper describes an implementation of a numerical model to calculate dynamic ratings for underground medium voltage cables."
-    
   - title: "Using continuous in situ measurements to probe the diverse thermal dynamics of MVAC & HVAC power cables"
     authors: "Pjotr Muis, Colin van Wijk, Joan Ressing, Anna van Velsen, Sjoerd Nauta"
     conference: "CIGRE"
@@ -14,6 +6,14 @@ publications:
     type: "conference"
     link: "https://www.e-cigre.org/publications/detail/session-2024-b1-session-2024-sc-b1-package.html"
     abstract: "This paper details interesting findings in real world data from cable temperature and soil measurements in various underground situations."
+  
+  - title: "A scalable approach towards real-time cable ratings for underground medium voltage cables"
+    authors: "Sander Rieken, Tim Weelinck, Joan Ressing"
+    journal: "CIRED"
+    year: 2021
+    type: "journal"
+    link: "https://ieeexplore.ieee.org/abstract/document/9692846"
+    abstract: "This paper describes an implementation of a numerical model to calculate dynamic ratings for underground medium voltage cables."
     
 certifications:
   - name: "Professional Scrum Product Owner 1"
