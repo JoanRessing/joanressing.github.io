@@ -1,30 +1,22 @@
 - name: "Bouldering"
   icon: "fas fa-mountain"
-  description: "Passionate about indoor and outdoor bouldering. Love the problem-solving aspect and physical challenge."
+  description: "Passionate about indoor and outdoor bouldering. Love the combination of problem-solving and physical challenge."
   
 - name: "Obstacle Runs"
   icon: "fas fa-running"
-  description: "Enjoy participating in obstacle course races and mud runs. Great for building endurance and mental toughness."
+  description: "Enjoy participating in obstacle and survival runs. Great for building endurance and mental toughness."
   
-- name: "General Fitness"
-  icon: "fas fa-dumbbell"
-  description: "Committed to maintaining physical health through regular workouts, strength training, and cardio."
-  
-- name: "Board Gaming"
+- name: "(Board) Gaming"
   icon: "fas fa-chess"
   description: "Love strategic board games and tabletop gaming. Enjoy both competitive and cooperative games with friends."
   
 - name: "Cooking"
   icon: "fas fa-utensils"
-  description: "Passionate about cooking and experimenting with different cuisines. Always trying new recipes and techniques."
+  description: "Passionate about cooking as well as baking. Always love trying and tasting new dished."
   
 - name: "Reading"
   icon: "fas fa-book"
-  description: "Avid reader of technical books, science fiction, and non-fiction. Always learning something new."
-  
-- name: "Learning & Exploring"
-  icon: "fas fa-lightbulb"
-  description: "Constantly curious about new technologies, methodologies, and ideas. Love taking on new challenges."
+  description: "Reader of informational books and non-fiction. Always learning something new about various topics."
   
 - name: "Travel"
   icon: "fas fa-plane"
