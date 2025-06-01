@@ -1,63 +1,63 @@
-- company: "Company Name 1"
-  position: "Senior Data Scientist"
-  duration: "2022 - Present"
+- company: "Alliander N.V."
+  position: "Software & Data Engineer"
+  duration: "Jan 2025 - Present"
   location: "Netherlands"
   type: "full-time"
-  description: "Lead data science initiatives and machine learning projects. Develop predictive models and analytics solutions."
+  description: "Lead technical development of a product that retrieves, transforms and visualizes low-voltage assets. Facilitated the integration of our product into existing tools and processes."
   technologies:
     - Python
-    - Machine Learning
-    - SQL
-    - Docker
-  achievements:
-    - "Improved model accuracy by 25%"
-    - "Led team of 3 data scientists"
-    - "Deployed ML models to production"
-
-- company: "Company Name 2"
-  position: "Data Scientist"
-  duration: "2020 - 2022"
-  location: "Netherlands"
-  type: "full-time"
-  description: "Developed machine learning models and data pipelines for business intelligence and analytics."
-  technologies:
-    - Python
-    - TensorFlow
+    - FastAPI
     - AWS
-    - Spark
+    - Docker
+    - PostgreSQL
+    - QGIS
   achievements:
-    - "Built automated reporting system"
-    - "Reduced processing time by 40%"
-    - "Mentored junior developers"
+    - "Worked as technical lead in Agile scrum team"
+    - "Designed application arhchitecture for new type of netwrok visualization"
+    - "Set up automatic CI/CD pipeline using Github Actions"
 
-- company: "Company Name 3"
-  position: "Software Engineer"
-  duration: "2019 - 2020"
+- company: "Alliander N.V."
+  position: "Data Science Software Engineer"
+  duration: "Sep 2020 - Dec 2024"
   location: "Netherlands"
   type: "full-time"
-  description: "Full-stack development of web applications and backend services."
+  description: "Developed a thermal model to compute dynamic thermal behaviour of underground electric cables. Supported policy changes to overload electric assets using our model and experimental findings."
   technologies:
-    - JavaScript
-    - React
-    - Node.js
-    - PostgreSQL
+    - Python
+    - AWS EKS
+    - OpenShift
+    - Github Actions
   achievements:
-    - "Developed customer-facing web application"
-    - "Improved application performance by 30%"
-    - "Implemented CI/CD pipelines"
+    - "Implemented a fast finite differences solver for the heat equation"
+    - "Published two papers on our thermal model and experiments"
+    - "Hired and mentored junior developers"
 
-- company: "Internship Company"
-  position: "Data Science Intern"
-  duration: "Summer 2019"
+- company: "Alliander N.V."
+  position: "Graduation Intern"
+  duration: "Sep 2019 - April 2020"
   location: "Netherlands"
   type: "internship"
-  description: "Research and development of machine learning algorithms for data analysis."
+  description: "Graduation project optimizing network configurations to reduce congestion using simulated annealing."
+  technologies:
+    - R
+    - Jupyter
+    - Git
+  achievements:
+    - "Sped up exisiting simulated annealing code by 30%+"
+    - "Showed that congestion cases could often be partially solved by leveraging dynamic loading data"
+
+- company: "Achmea"
+  position: "Data Science Intern"
+  duration: "Feb 2019 - Jul 2019"
+  location: "Netherlands"
+  type: "internship"
+  description: "Built a prioritization model to identify high risk clients. The model could be used to determine which insured objects should be inspected sooner than others."
   technologies:
     - Python
-    - Pandas
+    - ArcMap
     - Scikit-learn
     - Jupyter
   achievements:
-    - "Completed research project on predictive analytics"
-    - "Presented findings to senior management"
-    - "Published internal technical report"
+    - "Implemented an easy to understand prioritization model"
+    - "Implemented model into workflow of inspectors"
+    - "Showed improved inspection results"

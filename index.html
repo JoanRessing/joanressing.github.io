@@ -8,28 +8,27 @@ title: Home
     <div class="container">
         <div class="hero-content">
             <h1 class="hero-title">{{ site.title }}</h1>
-            <h2 class="hero-subtitle">Data Scientist & Software Engineer</h2>
+            <h2 class="hero-subtitle">Software Engineer & Data Scientist</h2>
             <p class="hero-description">
-                Passionate data scientist and software engineer with 5+ years of experience developing 
-                machine learning solutions and building scalable software systems. Based in the Netherlands, 
-                I specialize in turning complex data into actionable insights and creating innovative 
-                technical solutions across the full data science pipeline.
+                Passionate data scientist and software engineer with 5+ years of experience building 
+                scalable systems and machine learning solutions. I bring a pragmatic mindset to complex 
+                problems—connecting the dots, cutting through noise, and delivering impactful results.
             </p>
             
-            <div class="hero-highlights">
+            <!-- <div class="hero-highlights">
                 <div class="hero-highlight">
                     <span class="number">5+</span>
                     <span class="label">Years Experience</span>
                 </div>
                 <div class="hero-highlight">
-                    <span class="number">50+</span>
-                    <span class="label">Projects Completed</span>
+                    <span class="number">Python</span>
+                    <span class="label">Favourite Language</span>
                 </div>
                 <div class="hero-highlight">
                     <span class="number">10+</span>
-                    <span class="label">Technologies Mastered</span>
+                    <span class="label">Projects Completed</span>
                 </div>
-            </div>
+            </div> -->
             
             <div class="hero-cta">
                 <a href="#experience" class="btn btn-primary">View Experience</a>
@@ -91,11 +90,11 @@ title: Home
                         <span class="education-duration">{{ edu.duration }}</span>
                         <span class="education-location">{{ edu.location }}</span>
                         {% if edu.gpa %}
-                        <span class="education-gpa">GPA: {{ edu.gpa }}</span>
+                        <!-- <span class="education-gpa">GPA: {{ edu.gpa }}</span> -->
                         {% endif %}
                     </div>
                 </div>
-                <p class="education-description">{{ edu.description }}</p>
+                <!-- <p class="education-description">{{ edu.description }}</p> -->
                 {% if edu.thesis %}
                 <p class="education-thesis"><strong>Thesis:</strong> {{ edu.thesis }}</p>
                 {% endif %}

@@ -2,20 +2,17 @@ programming_languages:
   - name: "Python"
     level: 95
     icon: "fab fa-python"
-  - name: "JavaScript"
-    level: 85
-    icon: "fab fa-js-square"
   - name: "SQL"
-    level: 90
+    level: 80
     icon: "fas fa-database"
   - name: "R"
-    level: 75
+    level: 65
     icon: "fab fa-r-project"
   - name: "Java"
-    level: 70
+    level: 50
     icon: "fab fa-java"
-  - name: "TypeScript"
-    level: 80
+  - name: "C++"
+    level: 40
     icon: "fab fa-js-square"
 
 data_science_tools:
