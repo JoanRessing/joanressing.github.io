@@ -1,5 +1,5 @@
 - institution: "Radboud University"
-  degree: "Master of Science in Data Science"
+  degree: "MSc Computing Science - Data Science"
   duration: "2017 - 2019"
   location: "Netherlands"
   # description: "Specialized in machine learning, statistical analysis, and data visualization."
@@ -13,7 +13,7 @@
   # gpa: "8.5/10"
 
 - institution: "Radboud University"
-  degree: "Bachelor of Science in Computer Science"
+  degree: "BA Artificial Intelligence"
   duration: "2013 - 2017"
   location: "Netherlands"
   # description: "Foundation in AI and psychology with a focus on software science and statistics."

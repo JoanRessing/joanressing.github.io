@@ -16,7 +16,7 @@ programming_languages:
     icon: "fab fa-java"
   - name: "C++"
     level: 45
-    icon: "fab fa-js-square"
+    icon: "fab fa-code"
 
 
 cloud_devops:

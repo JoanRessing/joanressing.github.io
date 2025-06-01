@@ -8,15 +8,15 @@
   
 - name: "(Board) Gaming"
   icon: "fas fa-chess"
-  description: "Love strategic board games and tabletop gaming. Enjoy both competitive and cooperative games with friends."
+  description: "Love strategic board games and online gaming. Enjoy both competitive and cooperative games with friends."
   
 - name: "Cooking"
   icon: "fas fa-utensils"
-  description: "Passionate about cooking as well as baking. Always love trying and tasting new dished."
+  description: "Passionate about cooking as well as baking. Always love trying and tasting new dishes."
   
 - name: "Reading"
   icon: "fas fa-book"
-  description: "Reader of informational books and non-fiction. Always learning something new about various topics."
+  description: "Reader of informational and non-fiction books. Always learning something new about various topics."
   
 - name: "Travel"
   icon: "fas fa-plane"
