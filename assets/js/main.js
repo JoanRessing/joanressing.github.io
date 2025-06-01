@@ -65,8 +65,8 @@ function initScrollEffects() {
                     animateSkillBars();
                 }
                 
-                // Trigger stat counter animations when about section is visible
-                if (entry.target.classList.contains('about')) {
+                // Trigger stat counter animations when hero section is visible
+                if (entry.target.classList.contains('hero')) {
                     animateCounters();
                 }
             }
@@ -92,6 +92,9 @@ function initScrollEffects() {
 function initSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');
     skillBars.forEach(bar => {
+        // Store the target width from the inline style
+        const targetWidth = bar.style.width;
+        bar.setAttribute('data-width', targetWidth);
         bar.style.width = '0%';
     });
 }
@@ -100,21 +103,21 @@ function animateSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');
     
     skillBars.forEach((bar, index) => {
-        const targetWidth = bar.style.width;
-        bar.style.width = '0%';
+        const targetWidth = bar.getAttribute('data-width');
         
         setTimeout(() => {
             bar.style.width = targetWidth;
-        }, index * 100);
+        }, index * 150);
     });
 }
 
-// Counter animations
+// Counter animations for hero stats
 function animateCounters() {
-    const counters = document.querySelectorAll('.stat-number');
+    const counters = document.querySelectorAll('.hero-highlight .number');
     
     counters.forEach(counter => {
-        const target = parseInt(counter.textContent.replace('+', ''));
+        const text = counter.textContent;
+        const target = parseInt(text.replace('+', ''));
         const duration = 2000;
         const step = target / (duration / 16);
         let current = 0;
@@ -127,7 +130,7 @@ function animateCounters() {
             }
             
             const displayValue = Math.floor(current);
-            counter.textContent = displayValue + (counter.textContent.includes('+') ? '+' : '');
+            counter.textContent = displayValue + (text.includes('+') ? '+' : '');
         }, 16);
     });
 }
@@ -154,8 +157,10 @@ function initSmoothScrolling() {
                 // Close mobile menu if open
                 const navMenu = document.getElementById('nav-menu');
                 const navToggle = document.getElementById('nav-toggle');
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
+                if (navMenu && navToggle) {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                }
             }
         });
     });
@@ -166,26 +171,28 @@ function initMobileMenu() {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        }
-    });
-    
-    // Close menu when window is resized to desktop size
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        }
-    });
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        });
+        
+        // Close menu when window is resized to desktop size
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        });
+    }
 }
 
 // Utility functions
@@ -262,6 +269,6 @@ window.addEventListener('error', function(e) {
 });
 
 // Console message for developers
-console.log('%c👋 Hello there!', 'color: #2563eb; font-size: 16px; font-weight: bold;');
+console.log('%c👋 Hello there!', 'color: #1e293b; font-size: 16px; font-weight: bold;');
 console.log('%cThanks for checking out the code! This site was built with Jekyll, SCSS, and vanilla JavaScript.', 'color: #64748b; font-size: 14px;');
 console.log('%cFeel free to reach out if you have any questions!', 'color: #64748b; font-size: 14px;');
