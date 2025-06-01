@@ -7,10 +7,10 @@ programming_languages:
     icon: "fas fa-database"
   - name: "R"
     level: 65
-    icon: "fas fa-gear"
+    icon: "fas fa-r"
   - name: "YAML"
     level: 65
-    icon: "fab fa-js-square"
+    icon: "fab fa-gear"
   - name: "Java"
     level: 50
     icon: "fab fa-java"
