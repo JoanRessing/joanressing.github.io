@@ -1,0 +1,63 @@
+- company: "Company Name 1"
+  position: "Senior Data Scientist"
+  duration: "2022 - Present"
+  location: "Netherlands"
+  type: "full-time"
+  description: "Lead data science initiatives and machine learning projects. Develop predictive models and analytics solutions."
+  technologies:
+    - Python
+    - Machine Learning
+    - SQL
+    - Docker
+  achievements:
+    - "Improved model accuracy by 25%"
+    - "Led team of 3 data scientists"
+    - "Deployed ML models to production"
+
+- company: "Company Name 2"
+  position: "Data Scientist"
+  duration: "2020 - 2022"
+  location: "Netherlands"
+  type: "full-time"
+  description: "Developed machine learning models and data pipelines for business intelligence and analytics."
+  technologies:
+    - Python
+    - TensorFlow
+    - AWS
+    - Spark
+  achievements:
+    - "Built automated reporting system"
+    - "Reduced processing time by 40%"
+    - "Mentored junior developers"
+
+- company: "Company Name 3"
+  position: "Software Engineer"
+  duration: "2019 - 2020"
+  location: "Netherlands"
+  type: "full-time"
+  description: "Full-stack development of web applications and backend services."
+  technologies:
+    - JavaScript
+    - React
+    - Node.js
+    - PostgreSQL
+  achievements:
+    - "Developed customer-facing web application"
+    - "Improved application performance by 30%"
+    - "Implemented CI/CD pipelines"
+
+- company: "Internship Company"
+  position: "Data Science Intern"
+  duration: "Summer 2019"
+  location: "Netherlands"
+  type: "internship"
+  description: "Research and development of machine learning algorithms for data analysis."
+  technologies:
+    - Python
+    - Pandas
+    - Scikit-learn
+    - Jupyter
+  achievements:
+    - "Completed research project on predictive analytics"
+    - "Presented findings to senior management"
+    - "Published internal technical report"

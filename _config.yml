@@ -1,0 +1,62 @@
+# Site settings
+title: Joan Ressing
+email: your-email@example.com
+description: >-
+  Data Scientist & Software Engineer based in the Netherlands with 5+ years of professional experience.
+  Passionate about data science, software development, and continuous learning.
+
+baseurl: ""
+url: "https://joanressing.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  projects:
+    output: false
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# SEO settings
+author: Joan Ressing
+twitter:
+  username: 
+linkedin:
+  username:
+
+# Site navigation
+navigation:
+  - name: About
+    link: "#about"
+  - name: Experience
+    link: "#experience"
+  - name: Education
+    link: "#education"
+  - name: Skills
+    link: "#skills"
+  - name: Publications
+    link: "#publications"
+  - name: Interests
+    link: "#interests"
+  - name: Contact
+    link: "#contact"

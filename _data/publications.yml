@@ -1,0 +1,55 @@
+publications:
+  - title: "Machine Learning Approaches for Predictive Analytics in Business Intelligence"
+    authors: "Joan Ressing, Co-Author Name"
+    journal: "Journal of Data Science"
+    year: 2023
+    type: "journal"
+    link: "#"
+    abstract: "This paper explores various machine learning techniques for improving business intelligence systems through predictive analytics."
+    
+  - title: "Optimizing Data Pipelines for Real-time Analytics"
+    authors: "Joan Ressing, Team Member 1, Team Member 2"
+    conference: "International Conference on Data Engineering"
+    year: 2022
+    type: "conference"
+    link: "#"
+    abstract: "A comprehensive study on optimizing data pipeline architectures for real-time analytics applications."
+    
+  - title: "Deep Learning for Time Series Forecasting in Financial Markets"
+    authors: "Joan Ressing"
+    journal: "AI in Finance Quarterly"
+    year: 2021
+    type: "journal"
+    link: "#"
+    abstract: "Investigation of deep learning models for accurate time series forecasting in volatile financial markets."
+
+certifications:
+  - name: "AWS Certified Solutions Architect"
+    issuer: "Amazon Web Services"
+    date: "2023"
+    credential_id: "AWS-SAA-123456"
+    link: "#"
+    
+  - name: "Google Cloud Professional Data Engineer"
+    issuer: "Google Cloud"
+    date: "2022"
+    credential_id: "GCP-PDE-789012"
+    link: "#"
+    
+  - name: "Certified Kubernetes Administrator (CKA)"
+    issuer: "Cloud Native Computing Foundation"
+    date: "2022"
+    credential_id: "CKA-345678"
+    link: "#"
+    
+  - name: "TensorFlow Developer Certificate"
+    issuer: "TensorFlow"
+    date: "2021"
+    credential_id: "TF-DEV-901234"
+    link: "#"
+    
+  - name: "Professional Scrum Master I"
+    issuer: "Scrum.org"
+    date: "2020"
+    credential_id: "PSM-567890"
+    link: "#"

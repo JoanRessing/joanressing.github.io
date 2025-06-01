@@ -1,0 +1,310 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">{{ site.title }}</h1>
+            <h2 class="hero-subtitle">Data Scientist & Software Engineer</h2>
+            <p class="hero-description">
+                Based in the Netherlands with 5+ years of professional experience in data science, 
+                machine learning, and software development. Passionate about turning data into insights 
+                and building innovative solutions.
+            </p>
+            <div class="hero-cta">
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-placeholder">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm a passionate data scientist and software engineer with over 5 years of experience 
+                    in developing machine learning solutions and building scalable software systems. 
+                    Based in the Netherlands, I specialize in turning complex data into actionable insights 
+                    and creating innovative technical solutions.
+                </p>
+                <p>
+                    My expertise spans across the full data science pipeline, from data collection and 
+                    preprocessing to model development and deployment. I'm equally comfortable working 
+                    with cutting-edge machine learning frameworks and building robust web applications.
+                </p>
+                <p>
+                    When I'm not coding or analyzing data, you'll find me bouldering, participating in 
+                    obstacle runs, cooking new recipes, or diving into a good book. I believe in 
+                    continuous learning and am always exploring new technologies and methodologies.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Technologies Mastered</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section experience">
+    <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+            {% for job in site.data.experience %}
+            <div class="timeline-item {% if job.type == 'internship' %}internship{% endif %}">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <h3 class="job-title">{{ job.position }}</h3>
+                        <h4 class="job-company">{{ job.company }}</h4>
+                        <div class="job-meta">
+                            <span class="job-duration">{{ job.duration }}</span>
+                            <span class="job-location">{{ job.location }}</span>
+                            {% if job.type == 'internship' %}
+                            <span class="job-type">Internship</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <p class="job-description">{{ job.description }}</p>
+                    <div class="job-technologies">
+                        {% for tech in job.technologies %}
+                        <span class="tech-tag">{{ tech }}</span>
+                        {% endfor %}
+                    </div>
+                    <ul class="job-achievements">
+                        {% for achievement in job.achievements %}
+                        <li>{{ achievement }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            {% for edu in site.data.education %}
+            <div class="education-card">
+                <div class="education-header">
+                    <h3 class="education-degree">{{ edu.degree }}</h3>
+                    <h4 class="education-institution">{{ edu.institution }}</h4>
+                    <div class="education-meta">
+                        <span class="education-duration">{{ edu.duration }}</span>
+                        <span class="education-location">{{ edu.location }}</span>
+                        {% if edu.gpa %}
+                        <span class="education-gpa">GPA: {{ edu.gpa }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                <p class="education-description">{{ edu.description }}</p>
+                {% if edu.thesis %}
+                <p class="education-thesis"><strong>Thesis:</strong> {{ edu.thesis }}</p>
+                {% endif %}
+                {% if edu.coursework %}
+                <div class="education-coursework">
+                    <h5>Key Coursework:</h5>
+                    <ul>
+                        {% for course in edu.coursework %}
+                        <li>{{ course }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        
+        <div class="skills-category">
+            <h3 class="skills-category-title">Programming Languages</h3>
+            <div class="skills-grid">
+                {% for skill in site.data.skills.programming_languages %}
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="{{ skill.icon }}"></i>
+                        <span class="skill-name">{{ skill.name }}</span>
+                        <span class="skill-percentage">{{ skill.level }}%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: {{ skill.level }}%"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3 class="skills-category-title">Data Science & ML</h3>
+            <div class="skills-grid">
+                {% for skill in site.data.skills.data_science_tools %}
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="{{ skill.icon }}"></i>
+                        <span class="skill-name">{{ skill.name }}</span>
+                        <span class="skill-percentage">{{ skill.level }}%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: {{ skill.level }}%"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3 class="skills-category-title">Web Technologies</h3>
+            <div class="skills-grid">
+                {% for skill in site.data.skills.web_technologies %}
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="{{ skill.icon }}"></i>
+                        <span class="skill-name">{{ skill.name }}</span>
+                        <span class="skill-percentage">{{ skill.level }}%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: {{ skill.level }}%"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3 class="skills-category-title">Cloud & DevOps</h3>
+            <div class="skills-grid">
+                {% for skill in site.data.skills.cloud_devops %}
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="{{ skill.icon }}"></i>
+                        <span class="skill-name">{{ skill.name }}</span>
+                        <span class="skill-percentage">{{ skill.level }}%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: {{ skill.level }}%"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Publications Section -->
+<section id="publications" class="section publications">
+    <div class="container">
+        <h2 class="section-title">Publications & Certifications</h2>
+        
+        <div class="publications-content">
+            <div class="publications-list">
+                <h3>Publications</h3>
+                {% for pub in site.data.publications.publications %}
+                <div class="publication-item">
+                    <h4 class="publication-title">{{ pub.title }}</h4>
+                    <p class="publication-authors">{{ pub.authors }}</p>
+                    <p class="publication-venue">
+                        {% if pub.journal %}{{ pub.journal }}{% endif %}
+                        {% if pub.conference %}{{ pub.conference }}{% endif %}
+                        ({{ pub.year }})
+                    </p>
+                    <p class="publication-abstract">{{ pub.abstract }}</p>
+                    {% if pub.link != "#" %}
+                    <a href="{{ pub.link }}" class="publication-link" target="_blank">Read Paper</a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="certifications-list">
+                <h3>Certifications</h3>
+                {% for cert in site.data.publications.certifications %}
+                <div class="certification-item">
+                    <h4 class="certification-name">{{ cert.name }}</h4>
+                    <p class="certification-issuer">{{ cert.issuer }}</p>
+                    <p class="certification-date">{{ cert.date }}</p>
+                    <p class="certification-id">ID: {{ cert.credential_id }}</p>
+                    {% if cert.link != "#" %}
+                    <a href="{{ cert.link }}" class="certification-link" target="_blank">View Certificate</a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interests Section -->
+<section id="interests" class="section interests">
+    <div class="container">
+        <h2 class="section-title">Personal Interests</h2>
+        <div class="interests-grid">
+            {% for interest in site.data.interests %}
+            <div class="interest-item">
+                <div class="interest-icon">
+                    <i class="{{ interest.icon }}"></i>
+                </div>
+                <h3 class="interest-name">{{ interest.name }}</h3>
+                <p class="interest-description">{{ interest.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>
+                    I'm always interested in discussing new opportunities, collaborations, 
+                    or just having a chat about data science and technology. Feel free to reach out!
+                </p>
+            </div>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/your-profile" class="contact-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/joanressing" class="contact-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
