@@ -46,8 +46,6 @@ linkedin:
 
 # Site navigation
 navigation:
-  - name: About
-    link: "#about"
   - name: Experience
     link: "#experience"
   - name: Education
