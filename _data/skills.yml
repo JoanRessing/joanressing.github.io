@@ -1,96 +1,69 @@
 programming_languages:
   - name: "Python"
-    level: 95
+    level: 90
     icon: "fab fa-python"
   - name: "SQL"
     level: 80
     icon: "fas fa-database"
   - name: "R"
     level: 65
-    icon: "fab fa-r-project"
+    icon: "fas fa-gear"
+  - name: "YAML"
+    level: 65
+    icon: "fab fa-js-square"
   - name: "Java"
     level: 50
     icon: "fab fa-java"
   - name: "C++"
-    level: 40
+    level: 45
     icon: "fab fa-js-square"
 
-data_science_tools:
-  - name: "TensorFlow"
-    level: 85
-    icon: "fas fa-brain"
-  - name: "PyTorch"
-    level: 80
-    icon: "fas fa-fire"
-  - name: "Scikit-learn"
-    level: 90
-    icon: "fas fa-chart-line"
-  - name: "Pandas"
-    level: 95
-    icon: "fas fa-table"
-  - name: "NumPy"
-    level: 90
-    icon: "fas fa-calculator"
-  - name: "Jupyter"
-    level: 95
-    icon: "fas fa-book"
-  - name: "Apache Spark"
-    level: 75
-    icon: "fas fa-bolt"
-  - name: "Tableau"
-    level: 70
-    icon: "fas fa-chart-bar"
-
-web_technologies:
-  - name: "React"
-    level: 85
-    icon: "fab fa-react"
-  - name: "Node.js"
-    level: 80
-    icon: "fab fa-node-js"
-  - name: "HTML/CSS"
-    level: 90
-    icon: "fab fa-html5"
-  - name: "Vue.js"
-    level: 70
-    icon: "fab fa-vuejs"
-  - name: "Express.js"
-    level: 75
-    icon: "fas fa-server"
-  - name: "REST APIs"
-    level: 85
-    icon: "fas fa-exchange-alt"
 
 cloud_devops:
   - name: "AWS"
-    level: 80
+    level: 70
     icon: "fab fa-aws"
   - name: "Docker"
-    level: 85
+    level: 70
     icon: "fab fa-docker"
   - name: "Kubernetes"
     level: 70
     icon: "fas fa-dharmachakra"
-  - name: "Git"
-    level: 90
+  - name: "Github Actions"
+    level: 65
     icon: "fab fa-git-alt"
   - name: "CI/CD"
-    level: 80
+    level: 65
     icon: "fas fa-cogs"
   - name: "Linux"
-    level: 85
+    level: 60
     icon: "fab fa-linux"
+  - name: "Helm"
+    level: 60
+    icon: "fas-fa-helmet-safety"
+  - name: "OpenShift"
+    level: 55
+    icon: "fab fa-redhat"
 
-databases:
+data_science_tools:
+  - name: "Scikit-learn"
+    level: 90
+    icon: "fas fa-chart-line"
+  - name: "Jupyter"
+    level: 90
+    icon: "fas fa-book"
+  - name: "Pandas"
+    level: 90
+    icon: "fas fa-table"
   - name: "PostgreSQL"
-    level: 85
-    icon: "fas fa-database"
-  - name: "MongoDB"
-    level: 75
-    icon: "fas fa-leaf"
-  - name: "Redis"
-    level: 70
-    icon: "fas fa-memory"
-  - name: "MySQL"
     level: 80
     icon: "fas fa-database"
+  - name: "FastAPI"
+    level: 80
+    icon: "fas fa-exchange-alt"
+  - name: "PyTorch"
+    level: 60
+    icon: "fas fa-fire"
+  - name: "Redis"
+    level: 50
+    icon: "fas fa-memory"
