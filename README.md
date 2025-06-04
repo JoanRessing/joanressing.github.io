@@ -2,22 +2,6 @@
 
 A clean, professional personal homepage built with Jekyll, showcasing my experience as a Data Scientist and Software Engineer based in the Netherlands.
 
-## 🌟 Features
-
-- **Responsive Design**: Mobile-first approach that works perfectly on all devices
-- **Modern UI**: Clean, professional design with subtle animations and hover effects
-- **Performance Optimized**: Fast loading with optimized assets and minimal JavaScript
-- **SEO Ready**: Proper meta tags, structured data, and sitemap generation
-- **GitHub Pages Compatible**: Ready to deploy on GitHub Pages
-
-## 🛠️ Tech Stack
-
-- **Jekyll**: Static site generator
-- **SCSS**: For organized, maintainable styling
-- **Vanilla JavaScript**: For smooth interactions and animations
-- **Font Awesome**: For consistent iconography
-- **Google Fonts**: Inter font family for modern typography
-
 ## 📁 Project Structure
 
 ```
