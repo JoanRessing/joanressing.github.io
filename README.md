@@ -72,10 +72,6 @@ A clean, professional personal homepage built with Jekyll, showcasing my experie
 4. **Open your browser**
    Navigate to `http://localhost:4000`
 
-### Alternative: View Test Version
-
-If you don't have Jekyll installed, you can view a basic version by opening `test.html` in your browser.
-
 ## 🎨 Customization
 
 ### Content Updates
@@ -104,7 +100,6 @@ If you don't have Jekyll installed, you can view a basic version by opening `tes
 ## 📱 Sections Overview
 
 - **Hero**: Eye-catching introduction with call-to-action buttons
-- **About**: Personal summary with key statistics
 - **Experience**: Timeline of professional experience and internships
 - **Education**: Academic background with coursework details
 - **Skills**: Technical skills organized by category with progress indicators
@@ -112,24 +107,7 @@ If you don't have Jekyll installed, you can view a basic version by opening `tes
 - **Interests**: Personal hobbies and interests with icons
 - **Contact**: Social media links and contact information
 
-## 🎯 GitHub Pages Deployment
-
-This site is configured for automatic deployment on GitHub Pages:
-
-1. **Enable GitHub Pages** in your repository settings
-2. **Set source** to "Deploy from a branch"
-3. **Select branch** as `main` or `master`
-4. **Your site** will be available at `https://joanressing.com`
-
-### Custom Domain (Optional)
-
-1. Add a `CNAME` file with your domain name
-2. Configure DNS settings with your domain provider
-3. Enable "Enforce HTTPS" in GitHub Pages settings
-
-## 🔧 Development
-
-### Local Development
+## 🔧 Local Development
 
 ```bash
 # Install dependencies
@@ -141,18 +119,6 @@ bundle exec jekyll serve --livereload
 # Build for production
 bundle exec jekyll build
 ```
-
-### File Watching
-
-Jekyll automatically watches for changes and rebuilds the site. The `--livereload` flag enables automatic browser refresh.
-
-## 📊 Performance Features
-
-- **Optimized Images**: Responsive images with proper sizing
-- **Minified CSS**: Compressed stylesheets for faster loading
-- **Efficient JavaScript**: Minimal, optimized JavaScript
-- **Lazy Loading**: Images load as needed
-- **Caching**: Proper cache headers for static assets
 
 ## 🎨 Design System
 
@@ -172,14 +138,6 @@ Jekyll automatically watches for changes and rebuilds the site. The `--livereloa
 - Based on rem units
 - Consistent spacing scale
 - Responsive adjustments
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## 📄 License
 
