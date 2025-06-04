@@ -129,8 +129,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- **GitHub**: [joanressing](https://github.com/joanressing)
+- **LinkedIn**: [Joan Ressing](https://www.linkedin.com/in/joan-ressing-2751a6a0/)
+- **GitHub**: [JoanRessing](https://github.com/joanressing)
 
 ---
 
